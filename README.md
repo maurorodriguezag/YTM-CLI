@@ -12,7 +12,7 @@ Este proyecto es una aplicación de cliente de escritorio para YouTube Music, de
 
    ```bash
    git clone https://github.com/tu-usuario/yt-music-electron-client.git
-
+   ```
 En el directorio del proyecto, instala las dependencias.
 
 cd yt-music-electron-client
@@ -23,6 +23,7 @@ Ejecuta la aplicación con el siguiente comando:
 
    ```bash
    npm start
+   ```
 
 Esto abrirá la aplicación de cliente de YouTube Music.
 
