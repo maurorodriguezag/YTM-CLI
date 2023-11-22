@@ -21,7 +21,8 @@ npm install
 # Uso
 Ejecuta la aplicación con el siguiente comando:
 
-npm start
+   ```bash
+   npm start
 
 Esto abrirá la aplicación de cliente de YouTube Music.
 
