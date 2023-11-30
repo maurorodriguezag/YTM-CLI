@@ -6,8 +6,8 @@ let tray;
 
 function createWindow() {
   mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 400,
+    height: 400,
     show: false,
     webPreferences: {
       nodeIntegration: true,
@@ -17,6 +17,10 @@ function createWindow() {
   });
 
   mainWindow.loadURL("https://music.youtube.com");
+  const { width } = screen.getPrimaryDisplay().workAreaSize;
+  const x = width - (micWindow.getBounds().width - 20);
+  const y = 0;
+  micWindow.setPosition(x, y);
 
   mainWindow.on("close", function (event) {
     if (app.quitting) {
