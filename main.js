@@ -1,4 +1,4 @@
-const { app, BrowserWindow, Tray, Menu, protocol } = require('electron');
+const { app, BrowserWindow, Tray, Menu, protocol, screen } = require('electron');
 const path = require('path');
 
 let mainWindow;
@@ -6,8 +6,8 @@ let tray;
 
 function createWindow() {
   mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 500,
+    height: 400,
     show: false,
     webPreferences: {
       nodeIntegration: true,
@@ -17,7 +17,10 @@ function createWindow() {
   });
 
   mainWindow.loadURL('https://music.youtube.com');
-
+  const { width } = screen.getPrimaryDisplay().workAreaSize;
+  const x = width - (mainWindow.getBounds().width - 20);
+  const y = 0;
+  mainWindow.setPosition(x, y);
   mainWindow.on('close', function (event) {
     if (app.quitting) {
       mainWindow = null;
