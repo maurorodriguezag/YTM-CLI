@@ -16,7 +16,7 @@ function createWindow() {
     },
   });
 
-  mainWindow.loadURL('https://music.youtube.com');
+  mainWindow.loadURL('https://youtube.com');
   const { width } = screen.getPrimaryDisplay().workAreaSize;
   const x = width - (mainWindow.getBounds().width - 20);
   const y = 0;
