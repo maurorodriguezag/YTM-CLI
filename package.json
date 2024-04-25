@@ -1,11 +1,11 @@
 {
-  "name": "ytm-client",
+  "name": "youtube_client_free",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
   "scripts": {
     "start": "electron main.js",
-    "pack": "electron-builder --dir"
+    "build": "electron-builder --dir"
   },
   "keywords": [],
   "author": "",
